@@ -28,7 +28,7 @@ export default function MacbookModel16(props) {
 				}
 			}
 		});
-	}, [color,scene]);
+	}, [color, scene]);
 	return (
 		<group {...props} dispose={null}>
 			<mesh
@@ -118,7 +118,7 @@ export default function MacbookModel16(props) {
 			/>
 			<mesh
 				geometry={nodes.Object_123.geometry}
-				material={materials.sfCQkHOWyrsLmor}
+				
 				rotation={[Math.PI / 2, 0, 0]}
 			>
 				<meshBasicMaterial map={texture} />
