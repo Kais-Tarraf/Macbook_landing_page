@@ -21,7 +21,7 @@ const ModelScroll = () => {
 				muted: true,
 				playsInline: true,
 				preload: "auto",
-				crossOrigin: "anonymos",
+				crossOrigin: "anonymous",
 			});
 			v.load();
 		});
@@ -32,7 +32,7 @@ const ModelScroll = () => {
 				trigger: "#f-canvas",
 				start: "top top",
 				end: "bottom top",
-				scrub: true,
+				scrub: 1,
 				pin: true,
 			},
 		});
@@ -51,28 +51,28 @@ const ModelScroll = () => {
 			});
 		}
 		timeline
-			.call(() => setTexture("/videos/features-1.mp4"))
+			.call(() => setTexture("/videos/feature-1.mp4"))
 			.to(".box1", {
 				opacity: 1,
 				y: 0,
 				delay: 1,
 			})
-			.call(() => setTexture("/videos/features-2.mp4"))
+			.call(() => setTexture("/videos/feature-2.mp4"))
 			.to(".box2", {
 				opacity: 1,
 				y: 0,
 			})
-			.call(() => setTexture("/videos/features-3.mp4"))
+			.call(() => setTexture("/videos/feature-3.mp4"))
 			.to(".box3", {
 				opacity: 1,
 				y: 0,
 			})
-			.call(() => setTexture("/videos/features-4.mp4"))
+			.call(() => setTexture("/videos/feature-4.mp4"))
 			.to(".box4", {
 				opacity: 1,
 				y: 0,
 			})
-			.call(() => setTexture("/videos/features-5.mp4"))
+			.call(() => setTexture("/videos/feature-5.mp4"))
 			.to(".box5", {
 				opacity: 1,
 				y: 0,
