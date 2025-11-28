@@ -70,18 +70,18 @@ const Performance = () => {
 	return (
 		<section id="performance" className="mt-[750px]" ref={sectionRef}>
 			<h2>Next-level graphics performance. Game on.</h2>
-
 			<div className="wrapper">
-				{performanceImages.map((item, index) => (
-					<img
-						key={index}
-						src={item.src}
-						className={item.id}
-						alt={item.alt || `Performance Image #${index + 1}`}
-					/>
-				))}
+				<div className="wrapper">
+					{performanceImages.map((item, index) => (
+						<img
+							key={index}
+							src={item.src}
+							className={item.id}
+							alt={item.alt || `Performance Image #${index + 1}`}
+						/>
+					))}
+				</div>
 			</div>
-
 			<div className="content">
 				<p>
 					Run graphics-intensive workflows with a responsiveness that keeps up
